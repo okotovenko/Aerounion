@@ -3860,7 +3860,7 @@
         if (window.innerWidth < 768.98) if (document.querySelector(".what__items")) new core(".what__items", {
             observer: true,
             observeParents: true,
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 20,
             autoHeight: true,
             speed: 800
@@ -4194,8 +4194,7 @@
             this.wrapper.addEventListener("touchstart", this.events.touchdown, {
                 passive: true
             });
-            //! Событие клика по булетам
-                        const fpBullets = document.querySelectorAll(".fp-bullets");
+            const fpBullets = document.querySelectorAll(".fp-bullets");
             if (fpBullets[1].children && fpBullets[1]) fpBullets[1].addEventListener("click", this.events.click);
             if (fpBullets[0].children && fpBullets[0]) fpBullets[0].addEventListener("click", this.events.click);
         }
@@ -4213,13 +4212,17 @@
             let bulletMenuList = e.target.closest(`.menu__link`);
             let bulletDecor = e.target.closest(`.decor-header__link`);
             if (bulletMenuList) {
+                console.log(bulletMenuList);
                 const arrayChildren = Array.from(fpBullets[0].childNodes);
                 const idClickBullet = arrayChildren.indexOf(bulletMenuList);
+                console.log(idClickBullet);
                 this.switchingSection(idClickBullet);
             }
             if (bulletDecor) {
+                console.log(bulletDecor);
                 const arrayChildren = Array.from(fpBullets[1].childNodes);
                 const idClickBullet = arrayChildren.indexOf(bulletDecor);
+                console.log(idClickBullet);
                 this.switchingSection(idClickBullet);
             }
         }
@@ -4308,7 +4311,6 @@
                 }
             }));
         }
-        //! Установка буллетов
         setBullets() {
             const fpBullets = document.querySelectorAll(".fp-bullets");
             for (let index = 0; index < fpBullets.length; index++) this.bulletsWrapper = fpBullets[index];
@@ -4568,6 +4570,14 @@
             showAll.classList.remove("active");
             twoSmallContainer.classList.remove("active");
         }));
+        if (window.innerWidth > 767.98) {
+            let arrLi = document.querySelectorAll("[data-goto]");
+            for (let i = 0; i < arrLi.length; i++) {
+                let elementLi = arrLi[i].parentNode;
+                elementLi.removeChild(arrLi[i]);
+                elementLi.remove();
+            }
+        }
     }
     window["FLS"] = true;
     isWebp();
