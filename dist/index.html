@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Aerounion</title>
+	<meta charset="UTF-8">
+	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230605205951">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
+	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
+	<meta name="author" content="okotovenko">
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div data-fp data-fp-bullets class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__small-container">
+					<div class="header__logo logo">
+						<b>Aero<span>union</span></b>
+						<p>офіційний диллер в Україні</p>
+					</div>
+					<div class='header__menu menu'>
+						<nav class='menu__body'>
+							<!-- Меню побудоване на основі "булітів" 
+					Пункти меню будуються динамічно, в залежності від кількості слайдів
+					Назва пуункту береться з data-name="Головна" -->
+							<ul class='menu__list fp-bullets'></ul>
+						</nav>
+					</div>
+					<div class="header__nav">
+						<div data-da=".decor-header__menu, 440, 0" class="header__language">
+							<a href="#" class="header__ua">ua</a>
+							<a href="#" class="header__eng">eng</a>
+						</div>
+						<div data-da=".decor-header__volume, 600, 2" class="header__icons">
+							<div class="header__graphic _icon-chart"></div>
+							<div class="header__search _icon-search"></div>
+						</div>
+					</div>
+					<div class="header__decor decor-header">
+						<div class="decor-header__box">
+							<audio preload="auto" src="video/audio.mp3" type="audio/mp3" class="audio"></audio>
+
+							<button type='button' class='menu__icon icon-menu'> <span></span></button>
+							<div data-da=".decor-header__menu, 768, 0" class="decor-header__volume">
+								<button class="_icon-volume active"></button>
+								<button class="_icon-volume-off"></button>
+								<!-- <audio loop class="audio">
+							<source src="video/audio.ogg" type="audio/ogg">
+							<source src="video/audio.mp3" type="audio/mp3">
+							<p>Ваш браузер не підтримує фонове програвання музичних файлів</p>
+						</audio> -->
+							</div>
+							<div class="decor-header__arrow _icon-arrow-long">Листай далі</div>
+							<div class="decor-header__content">
+								<div class="decor-header__logo logo">
+									<b>Aero<span>union</span></b>
+									<p>офіційний диллер в Україні</p>
+								</div>
+								<nav class='decor-header__menu'>
+									<ul class='decor-header__list fp-bullets'>
+										<li data-goto=".main" data-goto-top="75"><a href="#" class="decor-header__link">Головна</a>
+										</li>
+										<li data-goto=".two" data-goto-top="75"><a href="#" class="decor-header__link">Моделі</a></li>
+										<li data-goto=".helicopter" data-goto-top="75"><a href="#" class="decor-header__link">Огляд</a>
+										</li>
+										<li data-goto=".about" data-goto-top="75"><a href="#" class="decor-header__link">Про
+												компанію</a>
+										</li>
+										<li data-goto=".what" data-goto-top="75"><a href="#" class="decor-header__link">Переваги</a>
+										</li>
+										<li data-goto=".on" data-goto-top="75"><a href="#" class="decor-header__link">Калькулятор</a>
+										</li>
+										<li data-goto=".servises" data-goto-top="75"><a href="#" class="decor-header__link">Послуги</a>
+										</li>
+										<li data-goto=".news" data-goto-top="75"><a href="#" class="decor-header__link">Новини</a></li>
+									</ul>
+								</nav>
+								<div class="decor-header__contacts">
+									<a class="decor-header__phone" href="tel: +380999999999">+380999999999</a>
+									<a class="decor-header__phone" href="tel: +380999999999">+380999999999</a>
+									<a class="decor-header__mail" href="mailto: 123@ukr.net">123@ukr.net</a>
+									<p class="decor-header__coordinate">Координати N50.440015 E30.533753</p>
+									<div class="decor-header__radio">Частота радіозв'язку 123.9 Мгц - UUCH</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="video">
+				<video muted autoplay loop metadata preload="auto">
+					<source type="video/webm" src="video/video.webm">
+					<source type="video/mp4" src="video/video.mp4">
+				</video>
+			</div>
+			<section data-name="Головна" data-fp-section class="page__main main">
+				<div class="main__container">
+					<div class="main__small-container">
+						<div class="main__box">
+							<h1 class="title"><span>Встигніть придбати</span> Robinson R44, R66</h1>
+							<p class="main__text text">Бажаючі придбати гелікоптер можуть оформити замовлення за чинними цінами
+								до
+								чергового щорічного підвищення цін у січні 2021 року</p>
+							<button class="main__button button button-big">Оформити замовлення</button>
+						</div>
+						<div data-da=".main__box, 768, 3" class="main__social">
+							<a href="#" class="main__fb _icon-facebook"></a>
+							<a href="#" class="main__youtube _icon-youtube"></a>
+							<a href="#" class="main__instagram _icon-instagram"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Моделі" data-fp-section class="page__two two">
+				<div class="two__container">
+					<div class="two__bg-ibg">
+						<picture><source srcset="img/2/bg.webp" type="image/webp"><img src="img/2/bg.png" alt="bg"></picture>
+					</div>
+					<div class="two__small-container">
+						<div class="two__content">
+							<div class="two__slider-box">
+								<div class="two__slider swiper">
+									<div class="two__wrapper swiper-wrapper">
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/01.webp" type="image/webp"><img src="img/2/01.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/02.webp" type="image/webp"><img src="img/2/02.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/03.webp" type="image/webp"><img src="img/2/03.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/04.webp" type="image/webp"><img src="img/2/04.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/05.webp" type="image/webp"><img src="img/2/05.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/06.webp" type="image/webp"><img src="img/2/06.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/07.webp" type="image/webp"><img src="img/2/07.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/08.webp" type="image/webp"><img src="img/2/08.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/09.webp" type="image/webp"><img src="img/2/09.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+										<div class="two__slide swiper-slide slide-two">
+											<div class="slide-two__content">
+												<div class="slide-two__left">
+													<div class="slide-two__top">
+														<h3 class="slide-two__title">ROBINSON R44</h3>
+														<button class="slide-two__info _icon-chart"></button>
+													</div>
+													<div class="slide-two__img-ibg">
+														<picture><source srcset="img/2/10.webp" type="image/webp"><img src="img/2/10.png" alt="helicopter"></picture>
+													</div>
+												</div>
+												<div class="slide-two__right">
+													<div class="slide-two__speed _icon-speed">240 км/год</div>
+													<div class="slide-two__passenger _icon-seat">3+1 пас</div>
+													<div class="slide-two__distanse _icon-track">650 км</div>
+													<a href="#" class="slide-two__more">Детальніше</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="two__slider-control">
+									<button type="button" class="two__swiper-button-prev _icon-arrow"></button>
+									<div class="two__swiper-pagination swiper-pagination"></div>
+									<button type="button" class="two__swiper-button-next _icon-arrow"></button>
+								</div>
+							</div>
+							<h2 class="slide-two__subtitle subtitle">Багато інформації – не знаєте
+								<span>Що краще вибрати?</span>
+							</h2>
+							<p class="slide-two__text text">Залишіть заявку, ми передзвонимо вам та відповімо на всі ваші
+								запитання</p>
+							<div class="slide-two__buttons">
+								<button class="slide-two__button button button-big">Залишити заявку</button>
+								<button class="slide-two__button button button-big button-all">всі моделі</button>
+							</div>
+						</div>
+						<div class="two__all all-two">
+							<button class="all-two__back _icon-arrow"></button>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/01.webp" type="image/webp"><img src="img/2/01.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/02.webp" type="image/webp"><img src="img/2/02.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/03.webp" type="image/webp"><img src="img/2/03.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/04.webp" type="image/webp"><img src="img/2/04.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/05.webp" type="image/webp"><img src="img/2/05.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/06.webp" type="image/webp"><img src="img/2/06.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/07.webp" type="image/webp"><img src="img/2/07.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+							<div class="all-two__content">
+								<div class="all-two__left">
+									<div class="all-two__top">
+										<h3 class="all-two__title">ROBINSON R44</h3>
+										<button class="all-two__info _icon-chart"></button>
+									</div>
+									<div class="all-two__img-ibg">
+										<picture><source srcset="img/2/08.webp" type="image/webp"><img src="img/2/08.png" alt="helicopter"></picture>
+									</div>
+								</div>
+								<div class="all-two__right">
+									<div class="all-two__speed _icon-speed">240 км/год</div>
+									<div class="all-two__passenger _icon-seat">3+1 пас</div>
+									<div class="all-two__distanse _icon-track">650 км</div>
+									<a href="#" class="all-two__more">Детальніше</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Огляд" data-fp-section class="page__helicopter helicopter">
+				<div class="helicopter__container">
+					<div class="helicopter__small-container">
+						<div class="helicopter__box">
+							<div class="helicopter__contorol">
+								<button type="button" class="helicopter__swiper-button-prev _icon-arrow"></button>
+								<div class="helicopter__swiper-pagination-number"></div>
+								<button type="button" class="helicopter__swiper-button-next _icon-arrow"></button>
+							</div>
+							<div class="helicopter__slider swiper">
+								<div class="helicopter__wrapper swiper-wrapper">
+									<div class="helicopter__slide swiper-slide">
+										<div class="helicopter__slide-content">
+											<div class="helicopter__left">
+												<h2 class="helicopter__name subtitle"><span>robinson r44</span></h2>
+												<p class="helicopter__text text">Значимість цих проблем настільки очевидна, що
+													зміцнення
+													та
+													розвиток структури потребують визначення та уточнення подальших напрямків
+													розвитку.
+												</p>
+												<div class="helicopter__buttons">
+													<button class="helicopter__button button button-small">Детальніше</button>
+													<button class="helicopter__button button button-small">Конфігуратор</button>
+												</div>
+											</div>
+											<div class="helicopter__img-ibg">
+												<iframe title="Guimbal Cabri G-2(D-HDMB) German Helicopter 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/aaa0f861e8784f449ccc47ed0864b3b4/embed?autostart=1&amp;internal=1&amp;tracking=0&amp;ui_infos=0&amp;ui_snapshots=1&amp;ui_stop=0&amp;ui_watermark=0" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen=""></iframe>
+											</div>
+											<div class="helicopter__right">
+												<div class="helicopter__info">
+													<b>287</b><span>км/год</span>
+												</div>
+												<div class="helicopter__info">
+													<b>6</b><span>людей</span>
+												</div>
+												<div class="helicopter__info">
+													<b>870</b><span>літрів</span>
+												</div>
+												<div class="helicopter__info">
+													<b>5</b><span>годин</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="helicopter__slide swiper-slide">
+										<div class="helicopter__slide-content">
+											<div class="helicopter__left">
+												<h2 class="helicopter__name subtitle"><span>robinson r22</span></h2>
+												<p class="helicopter__text text">Значимість цих проблем настільки очевидна, що
+													зміцнення
+													та
+													розвиток структури потребують визначення та уточнення подальших напрямків
+													розвитку.
+												</p>
+												<div class="helicopter__buttons">
+													<button class="helicopter__button button button-small">Детальніше</button>
+													<button class="helicopter__button button button-small">Конфігуратор</button>
+												</div>
+											</div>
+											<div class="helicopter__img-ibg">
+												<iframe title="Guimbal Cabri G-2(D-HDMB) German Helicopter 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/f25c041a8d004eb092e4aa41d1dc33f4/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen=""></iframe>
+											</div>
+											<div class="helicopter__right">
+												<div class="helicopter__info">
+													<b>287</b><span>км/год</span>
+												</div>
+												<div class="helicopter__info">
+													<b>6</b><span>людей</span>
+												</div>
+												<div class="helicopter__info">
+													<b>870</b><span>літрів</span>
+												</div>
+												<div class="helicopter__info">
+													<b>5</b><span>годин</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="helicopter__slide swiper-slide">
+										<div class="helicopter__slide-content">
+											<div class="helicopter__left">
+												<h2 class="helicopter__name subtitle"><span>robinson r11</span></h2>
+												<p class="helicopter__text text">Значимість цих проблем настільки очевидна, що
+													зміцнення
+													та
+													розвиток структури потребують визначення та уточнення подальших напрямків
+													розвитку.
+												</p>
+												<div class="helicopter__buttons">
+													<button class="helicopter__button button button-small">Детальніше</button>
+													<button class="helicopter__button button button-small">Конфігуратор</button>
+												</div>
+											</div>
+											<div class="helicopter__img-ibg">
+												<iframe title="Guimbal Cabri G-2(D-HDMB) German Helicopter 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/dcb739afc6ed4772b54083319b2fa050/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen=""></iframe>
+											</div>
+											<div class="helicopter__right">
+												<div class="helicopter__info">
+													<b>287</b><span>км/год</span>
+												</div>
+												<div class="helicopter__info">
+													<b>6</b><span>людей</span>
+												</div>
+												<div class="helicopter__info">
+													<b>870</b><span>літрів</span>
+												</div>
+												<div class="helicopter__info">
+													<b>5</b><span>годин</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="helicopter__slide swiper-slide">
+										<div class="helicopter__slide-content">
+											<div class="helicopter__left">
+												<h2 class="helicopter__name subtitle"><span>robinson r66</span></h2>
+												<p class="helicopter__text text">Значимість цих проблем настільки очевидна, що
+													зміцнення
+													та
+													розвиток структури потребують визначення та уточнення подальших напрямків
+													розвитку.
+												</p>
+												<div class="helicopter__buttons">
+													<button class="helicopter__button button button-small">Детальніше</button>
+													<button class="helicopter__button button button-small">Конфігуратор</button>
+												</div>
+											</div>
+											<div class="helicopter__img-ibg">
+												<iframe title="Guimbal Cabri G-2(D-HDMB) German Helicopter 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/dce45ef51e5447f8bb9b49f47d953638/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen=""></iframe>
+											</div>
+											<div class="helicopter__right">
+												<div class="helicopter__info">
+													<b>287</b><span>км/год</span>
+												</div>
+												<div class="helicopter__info">
+													<b>6</b><span>людей</span>
+												</div>
+												<div class="helicopter__info">
+													<b>870</b><span>літрів</span>
+												</div>
+												<div class="helicopter__info">
+													<b>5</b><span>годин</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="helicopter__slide swiper-slide">
+										<div class="helicopter__slide-content">
+											<div class="helicopter__left">
+												<h2 class="helicopter__name subtitle"><span>robinson r88</span></h2>
+												<p class="helicopter__text text">Значимість цих проблем настільки очевидна, що
+													зміцнення
+													та
+													розвиток структури потребують визначення та уточнення подальших напрямків
+													розвитку.
+												</p>
+												<div class="helicopter__buttons">
+													<button class="helicopter__button button button-small">Детальніше</button>
+													<button class="helicopter__button button button-small">Конфігуратор</button>
+												</div>
+											</div>
+											<div class="helicopter__img-ibg">
+												<iframe title="Guimbal Cabri G-2(D-HDMB) German Helicopter 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/c977fbef4f304e9e951114c89db57056/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" id="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen=""></iframe>
+											</div>
+											<div class="helicopter__right">
+												<div class="helicopter__info">
+													<b>287</b><span>км/год</span>
+												</div>
+												<div class="helicopter__info">
+													<b>6</b><span>людей</span>
+												</div>
+												<div class="helicopter__info">
+													<b>870</b><span>літрів</span>
+												</div>
+												<div class="helicopter__info">
+													<b>5</b><span>годин</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="swiper-helicopter-menu">
+								<li class="swiper-helicopter-menu__item active" data-index="0">R44</li>
+								<li class="swiper-helicopter-menu__item" data-index="1">R22</li>
+								<li class="swiper-helicopter-menu__item" data-index="2">R11</li>
+								<li class="swiper-helicopter-menu__item" data-index="3">R66</li>
+								<li class="swiper-helicopter-menu__item" data-index="4">R88</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Про компанію" data-fp-section class="page__about about">
+				<div class="about__container">
+					<div class="about__small-container">
+						<div class="about__left">
+							<h2 class="about__subtitle subtitle">Коротко <br> <span>про компанію</span></h2>
+							<p class="about__text text">Значимість цих проблем настільки очевидна, що зміцнення та розвиток
+								структури потребують визначення та уточнення подальших напрямків розвитку.</p>
+							<p class="about__text text">Розвиток структури вимагають визначення та уточнення подальших напрямів
+								розвитку.</p>
+							<div class="about__numbers">
+								<div class="about__ears">
+									<span>15 років</span>
+									<p class="text">Успішної роботи</p>
+								</div>
+								<div class="about__clients">
+									<span>50000+</span>
+									<p class="text">Задоволених клієнтів</p>
+								</div>
+								<div class="about__peoples">
+									<span>100+</span>
+									<p class="text">людей в команді</p>
+								</div>
+							</div>
+							<button class="about__button button-more _icon-arrow-long">Дізнатися більше
+								<div class="button-hover-top"></div>
+								<div class="button-hover-bottom"></div>
+							</button>
+						</div>
+						<div class="about__right">
+							<p class="about__p1"><span>Офіційний дилер</span></p>
+							<p class="about__p2"><span>Сервіс</span></p>
+							<p class="about__p3"><span>Гарантія</span></p>
+							<div class="about__circle circle circle-big circle-thin">
+							</div>
+							<div class="about__circle circle circle-big circle-bold"></div>
+							<div class="about__circle circle circle-medium circle-thin">
+							</div>
+							<div class="about__circle circle circle-medium circle-bold"></div>
+							<div class="about__circle circle circle-small circle-thin"></div>
+							<div class="about__circle circle circle-small circle-bold">
+							</div>
+							<h3 class="about__name subtitle"><span>aero</span>union</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Перваги" data-fp-section class="page__what what">
+				<div class="what__container">
+					<div class="what__small-container">
+						<div class="what__content">
+							<div class="what__left">
+								<h2 class="what__subtitle subtitle"><span>Що ви отримаєте <br></span> коли придбаєте robinson
+								</h2>
+								<div class="what__items swiper">
+									<div class="what__items-wrapper swiper-wrapper">
+										<div class="what__item swiper-slide">
+											<div class="what__box">
+												<div class="what__circle circle circle-thin circle-big-what"></div>
+												<div class="what__circle circle circle-thin circle-small-what"></div>
+												<div class="what__circle circle circle-bold circle-big-what"></div>
+												<div class="what__circle circle circle-bold circle-small-what"></div>
+												<div class="what__img">
+													<img src="img/what/stra.svg" alt="star">
+												</div>
+											</div>
+											<h4 class="what__title">Статус</h4>
+											<p class="what__text text">Гелікоптер - це престижна покупка, яка
+												підкреслює не лише ваш статус, а й статус вашої компанії</p>
+										</div>
+										<div class="what__item swiper-slide">
+											<div class="what__box">
+												<div class="what__circle circle circle-thin circle-big-what"></div>
+												<div class="what__circle circle circle-thin circle-small-what"></div>
+												<div class="what__circle circle circle-bold circle-big-what"></div>
+												<div class="what__circle circle circle-bold circle-small-what"></div>
+												<div class="what__img">
+													<img src="img/what/clock.svg" alt="star">
+												</div>
+											</div>
+											<h4 class="what__title">Час</h4>
+											<p class="what__text text">Економія часу
+												при польоті
+												на гелікоптері щодо автомобіля становить від 3 до 8 разів</p>
+										</div>
+										<div class="what__item swiper-slide">
+											<div class="what__box">
+												<div class="what__circle circle circle-thin circle-big-what"></div>
+												<div class="what__circle circle circle-thin circle-small-what"></div>
+												<div class="what__circle circle circle-bold circle-big-what"></div>
+												<div class="what__circle circle circle-bold circle-small-what"></div>
+												<div class="what__img">
+													<img src="img/what/dird.svg" alt="star">
+												</div>
+											</div>
+											<h4 class="what__title">Свобода</h4>
+											<p class="what__text text">Гелікоптер здатний доставити вас у ті місця, куди не
+												дістатися
+												на
+												будь-якому іншому транспорті для бізнесу або відпочинку</p>
+										</div>
+										<div class="what__item swiper-slide">
+											<div class="what__box">
+												<div class="what__circle circle circle-thin circle-big-what"></div>
+												<div class="what__circle circle circle-thin circle-small-what"></div>
+												<div class="what__circle circle circle-bold circle-big-what"></div>
+												<div class="what__circle circle circle-bold circle-small-what"></div>
+												<div class="what__img">
+													<img src="img/what/traffic-ligh.svg" alt="star">
+												</div>
+											</div>
+											<h4 class="what__title">Відсутність пробок</h4>
+											<p class="what__text text">
+												Жодні пробки
+												та затори на дорогах
+												не страшні</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="what__right">
+								<form action="files/sendmail/sendmail.php" data-ajax enctype="multipart/form-data" class="form" method="POST">
+									<input type="hidden" name="form_subject" value="Тема листа">
+									<h2>Є питання? <br> <span>Залиште заявку вже зараз</span></h2>
+									<label class="form-label">
+										<input type="text" placeholder="Iм'я" data-required name="name" id="name" maxlength="255" data-error="Error" class="input">
+									</label>
+									<label class="form-label">
+										<input type="tel" placeholder="Номер телефону" data-required name="tel" id="tel" maxlength="255" data-error="Error" class="input">
+									</label>
+									<button type="submit" class="button button-big">Залишити заявку</button>
+									<p>Залишіть заявку, ми перетелефонуємо вам найближчим часом та відповімо на всі ваші
+										запитання
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Калькулятор" data-fp-section class="page__on on">
+				<div class="on__container">
+					<div class="on__small-container">
+						<div class="on__box">
+							<div class="on__left">
+								<div class="on__map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2234176.6961373417!2d31.8071448476643!3d49.4348511464219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d50.4720344!2d30.5414891!4m5!1s0x40dc673dfa85bb03%3A0x7e675cd9074d3f4a!2z0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjkwMDA!3m2!1d47.8388!2d35.139567!5e0!3m2!1sru!2snl!4v1685797379948!5m2!1sru!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+							<div class="on__right">
+								<div class="on__form">
+									<h2 class="on__title subtitle"><span>на авто</span> чи
+										<span>на robinson?</span>
+									</h2>
+									<div class="on__radiobuttons">
+										<div class="on__radiobutton">
+											<p>Популярний маршрут</p>
+											<input type="radio" value="1" name="radiobutton">
+										</div>
+										<div class="on__radiobutton">
+											<p>Інший маршрут</p>
+											<input type="radio" value="2" name="radiobutton">
+										</div>
+									</div>
+									<div class="on__from">
+										<span>Звідки</span>
+										<select name="form[]" data-class-modif="form">
+											<option value="1" selected>Запоріжжя</option>
+											<option value="2">Дніпро</option>
+											<option value="3">Бердянськ</option>
+											<option value="4">Львів</option>
+										</select>
+									</div>
+									<div class="on__where">
+										<span>Куди</span>
+										<select name="form[]" data-class-modif="form">
+											<option value="1" selected>Київ</option>
+											<option value="2">Луцьк</option>
+											<option value="3">Одеса</option>
+											<option value="4">Хмельницький</option>
+										</select>
+									</div>
+									<div class="on__images">
+										<div class="on__helicopter _icon-helicopter">1 год 45 хв</div>
+										<div class="on__auto _icon-auto">6 год 35хв</div>
+									</div>
+									<p>Поїздка Запоріжжя - Київ на авто: 528км / 80км/год = 6 год 35хв. Подорож
+										Запоріжжя - Київ на гелікоптері: 446км / 246км/год = 1 год 45 хв</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Послуги" data-fp-section class="page__servises servises">
+				<div class="servises__container">
+					<div class="servises__small-container">
+						<div class="servises__items">
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/helicopter.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Продаж</span><br>гелікоптерів</h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/system.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Технічне</span><br>обслуговування</h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/spring.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Запчастини</span></h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/support.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Встановлення</span><br>дод. обладнання</h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/safety.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Тюнінг</span></h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+							<div class="servises__item">
+								<div class="servises__top">
+									<div class="servises__img">
+										<img src="img/servises/plus.svg" alt="helicopter">
+									</div>
+									<h3 class="servises__title"><span>Додаткові</span><br>послуги</h3>
+								</div>
+								<p class="servises__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+									розвиток структури вимагають вимагають вимагають</p>
+								<button class="servises__button button-more _icon-arrow-long">Детальніше
+									<div class="button-hover-top"></div>
+									<div class="button-hover-bottom"></div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-name="Новини" data-fp-section class="page__news news">
+				<div class="news__container">
+					<div class="news__small-container">
+						<div class="news__box">
+							<div class="news__items">
+								<div class="news__item">
+									<div class="news__img-ibg">
+										<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.png" alt="helicopter"></picture>
+									</div>
+									<div class="news__content">
+										<div class="news__date">03.06.2023</div>
+										<h3 class="news__title">Договір з аеропотром в Києві</h3>
+										<p class="news__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+											розвиток структури вимагають вимагають вимагають</p>
+										<button class="news__button button-more _icon-arrow-long">Детальніше
+											<div class="button-hover-top"></div>
+											<div class="button-hover-bottom"></div>
+										</button>
+									</div>
+								</div>
+								<div class="news__item">
+									<div class="news__img-ibg">
+										<picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.png" alt="helicopter"></picture>
+									</div>
+									<div class="news__content">
+										<div class="news__date">03.06.2023</div>
+										<h3 class="news__title">Договір з аеропотром в Києві</h3>
+										<p class="news__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+											розвиток структури вимагають вимагають вимагають</p>
+										<button class="news__button button-more _icon-arrow-long">Детальніше
+											<div class="button-hover-top"></div>
+											<div class="button-hover-bottom"></div>
+										</button>
+									</div>
+								</div>
+								<div class="news__item">
+									<div class="news__img-ibg">
+										<picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.png" alt="helicopter"></picture>
+									</div>
+									<div class="news__content">
+										<div class="news__date">03.06.2023</div>
+										<h3 class="news__title">Договір з аеропотром в Києві</h3>
+										<p class="news__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+											розвиток структури вимагають вимагають вимагають</p>
+										<button class="news__button button-more _icon-arrow-long">Детальніше
+											<div class="button-hover-top"></div>
+											<div class="button-hover-bottom"></div>
+										</button>
+									</div>
+								</div>
+								<div class="news__item">
+									<div class="news__img-ibg">
+										<picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.png" alt="helicopter"></picture>
+									</div>
+									<div class="news__content">
+										<div class="news__date">03.06.2023</div>
+										<h3 class="news__title">Договір з аеропотром в Києві</h3>
+										<p class="news__text text">Значимість цих проблем настільки очевидна, що зміцнення та
+											розвиток структури вимагають вимагають вимагають</p>
+										<button class="news__button button-more _icon-arrow-long">Детальніше
+											<div class="button-hover-top"></div>
+											<div class="button-hover-bottom"></div>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="news__more">
+								<button class="news__number active">1</button>
+								<button class="news__number">2</button>
+								<button class="news__number">3</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230605205951"></script>
+</body>
+
+</html>
